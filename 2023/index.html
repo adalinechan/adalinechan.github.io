@@ -1,0 +1,382 @@
+<head>
+<style>
+body {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 120%;
+}
+
+.nav-links {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 200%; /* This will make the font size 150% of the body font size, i.e., 24px */
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px;
+    width: 100%;
+}
+
+table, th, td {
+    border: none;
+}
+
+/* .image-container { */
+div {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+div img {
+    margin-right: 0;
+}
+
+/* .image-container img { 
+div img {
+    flex: 1;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    margin: 0 5px;
+}*/
+
+
+video.portrait {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+video.landscape {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+
+img.portrait {
+    max-width: 320px;
+}
+
+img.landscape {
+    max-width: 640px;
+}
+
+img#number-blocks {
+    max-width: 640px;
+}
+
+.description {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+</style>
+<script>
+window.onload = function() {
+
+    var images = document.getElementsByTagName('img');
+
+    for (var i = 0; i < images.length; i++) {
+        images[i].onload = function() {
+            console.log("loading")
+            if (this.naturalHeight > this.naturalWidth) {
+                this.className = 'portrait';
+            } else {
+                this.className = 'landscape';
+            }
+        };
+    }
+
+    var videos = document.getElementsByTagName('video');
+
+    for (var i = 0; i < videos.length; i++) {
+        videos[i].onloadedmetadata = function() {
+            if (this.videoHeight > video.videoWidth) {
+                this.className = 'portrait';
+            } else {
+                this.className = 'landscape';
+            }
+        };
+    };        
+};
+</script>
+</head>
+<body>
+<h1>Adaline in 2023</h1>
+<div class="nav-links" id="Sports">
+     Sports | <a href="#Family">Family</a> | <a href="#Others">Others</a> | <a href="#Music">Music</a> | <a href="#Writing">Writing</a> | <a href="#Drawing">Drawing</a>
+</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/school-walkathon-310.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Having a blast at school's annual walkathon</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/soccer-309.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Soccer practice</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/tennis-306.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Practicing tennis forehand</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/swim-learn-freestyle-307.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Learning to Swim progression - freestyle hands</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/swimming-learning-kick-306.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Learning to Swim progression - how to kick effectively</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/swim-backstroke-kicking-309.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Learning to Swim progression - Floating on my back</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/swim-freestyle2-310.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Learning to Swim progression - Finally, we know how to free style</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/apapa2-305.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Dancing at Academy of Palo Alto Performing Arts's annual performance</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/apapa-practice1-312.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Learning new dance routine at Academy of Palo Alto Performing Arts</div>
+
+
+<div class="nav-links" id="Family">
+    <a href="#Sports">Sports</a> | Family | <a href="#Others">Others</a> | <a href="#Music">Music</a> | <a href="#Writing">Writing</a> | <a href="#Drawing">Drawing</a>
+</div>
+<div>
+<img src="./images/adaline-and-sis-311.jpg">
+</div>
+<div class="description">Adaline and baby sister Naomi</div>
+
+<div>
+<!-- <img src="./images/adaline-naomi-bunny-308.jpg"> -->
+<img src="./images/adaline-naomi-bunny2-310.jpg">
+<img src="./images/anna-elisa2-310.jpg">
+<img src="./images/anna-elisa-309.jpg">
+</div>
+<div class="description">Adaline's drawing for her sister</div>
+
+<div>
+<img src="./images/drawing-instruction-book1.jpg">
+<img src="./images/drawing-instruction-book2.jpg">
+</div>
+<div>
+<img src="./images/drawing-instruction-book3.jpg">
+<img src="./images/make-book-for-sis-307.jpg">
+</div>
+<div class="description">I made drawing instruction booklet and other learning pamphlets for sister</div>
+
+
+<div class="nav-links" id="Others">
+    <a href="#Sports">Sports</a> | <a href="#Family">Family</a> | Others | <a href="#Music">Music</a> | <a href="#Writing">Writing</a> | <a href="#Drawing">Drawing</a>
+</div>
+
+<div>
+<img src="./images/museum3-311.jpg">
+<img src="./images/museum-311.jpg">
+<img src="./images/museum2-311.jpg">
+</div>
+<div class="description">SF MOMA museum visit!</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/school-motto-309.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Reciting my new school's motto</div>
+    
+<div class="video-container">
+    <video controls> <source src="videos/buying-using-own-money-311.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">I earned our 1st dollar, now I got to spend it!</div>
+
+<div class="nav-links" id="Music">
+    <a href="#Sports">Sports</a> | <a href="#Family">Family</a> | <a href="#Others">Others</a> | Music | <a href="#Writing">Writing</a> | <a href="#Drawing">Drawing</a>
+</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/sing-yankee-doodle-301.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Excited to show the new song I learned at pre-K : yankee doodle</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/piano-part-of-the-world-311.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Singing & playing piano: part-of-the-world</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/choir-consider-yourself-303.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">First joining the choir at 4. My first song - Consider yourself: love singing this with my close friends</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/choir-Whenever-I-Feel-Afraid-305.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Choir 2nd quarter. Whenever I Feel Afraid: it really works empowering me!</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/choir-Wouldnt-It-Be-Loverly-305.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Wouldn't It Be Loverly: Just beautiful music and lyrics</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/choir-tomorrow-309.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Choir 3rd quarter. Tomorrow</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/choir-this-is-halloween-310.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Performing at the 2023 cabaret and garden party to raise fund for city of palo alto children's center</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/singing-solo-311.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Singing solo (How Far I'll go) in front of a big audience during recital</div>
+
+<div class="nav-links" id="Writing">
+    <a href="#Sports">Sports</a> | <a href="#Family">Family</a> | <a href="#Others">Others</a> | <a href="#Music">Music</a> | Writing | <a href="#Drawing">Drawing</a>
+</div>
+
+<div>
+    <img id="number-blocks" src="./images/drawingsonpapertowel-310.jpg">
+</div>
+<div class="description">I'm bored waiting at a restaurant. Here's how I remembered the number block characters (on a napkin)</div>
+
+<div>
+<img src="./images/why-the-sun-312.jpg">
+</div>
+<div class="description">Drawing of the sun & planets. 
+    "Why do the planets never stop? Why doesn't the sun halt in the middle of the solar system? How can space have no gravity? How would a bunny jump on the moon?" 
+</div>
+
+<div>
+    <img src="./images/rules-311.jpg">
+<img src="./images/schedule-311.jpg">
+</div>
+<div class="description">
+    Recall all the school teaching and set my own schedule
+</div>
+<div> 
+<img src="./images/letter-to-sis-311.jpg">
+</div>
+<div class="description">
+    Writing a letter to my sister, please listen to mommy and I promised I will walk you to school.
+</div>
+<div>
+<img src="./images/letter-for-mom-310.jpg">
+</div>
+<div class="description">
+    A Letter to my mom, reminding her to help with things at school, and also I love her.
+</div>
+<div>
+<img src="./images/letter-to-amelie-310.jpg">
+</div>
+<div class="description">
+    Letter to my friend at school
+</div>
+<div>
+<img src="./images/letter-to-music-teacher-311.jpg">
+<img src="./images/letter-to-music-teacher2-311.jpg">
+</div>
+<div class="description">
+    Writing a thank you card to my music teacher
+</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/practice-chinese-writing-309.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Practice writing chinese with a brush pen</div>
+
+<div class="video-container">
+    <video controls> <source src="videos/practice-chinese-reading-310.mp4" type="video/mp4"> </video>
+</div>
+<div class="description">Practice Reading Chinese</div>
+
+
+<div class="nav-links" id="Drawing">
+    <a href="#Sports">Sports</a> | <a href="#Family">Family</a> | <a href="#Others">Others</a> | <a href="#Music">Music</a> | <a href="#Writing">Writing</a> | Drawing
+</div>
+
+<div>
+    <img src="./images/letter-with-stars-311.jpg">
+</div>
+<div class="description">Drawing inspired by experiencing solar eclipse</div>
+<div>
+<img src="./images/drawing-in-action2-308.jpg">
+<img src="./images/cartoon-drawing-308.jpg">
+</div>
+<div class="description">I love this cartoon drawing book</div>
+
+<div>
+<img src="./images/drawing-bag-311.jpg">
+<img src="./images/handbag-311.jpg">
+</div>
+<div class="description">Trying to recreate the handbag ad that I saw earlier, with my own heart shaped clip design!</div>
+
+<div>
+    <img src="./images/artwork-golden-gate-bridge-307.jpg">
+<img src="./images/castle-309.jpg">
+</div>
+<div>
+    <img src="./images/colorful-deer-311.jpg">
+<img src="./images/colorful-oil-painting-bunny-308.jpg">
+</div>
+<div>
+    <img src="./images/colorsful-icecream-311.jpg">
+<img src="./images/colorful-pony-309.jpg">
+</div>
+    <div>
+    <img src="./images/ipad-308.jpg">
+</div>
+<div class="description">I love colors!</div>
+
+<script>
+    window.onload = function() {
+    var images = document.getElementsByTagName('img');
+
+    for (var i = 0; i < images.length; i++) {
+        if (images[i].naturalHeight > images[i].naturalWidth) {
+            images[i].className = 'portrait';
+        } else {
+            images[i].className = 'landscape';
+        }
+    }
+
+    var videos = document.getElementsByTagName('video');
+
+    for (var i = 0; i < videos.length; i++) {
+        if (videos[i].videoHeight > videos[i].videoWidth) {
+            videos[i].className = 'portrait';
+        } else {
+            videos[i].className = 'landscape';
+        }
+    };        
+};
+</script>
+</body>
