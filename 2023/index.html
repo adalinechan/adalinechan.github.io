@@ -1,472 +1,570 @@
 <html>
 <head>
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link href="https://assets-global.website-files.com/658e7cfc64467c5d8b144d6e/css/sulis-fresh-site.webflow.19b495238.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://assets-global.website-files.com/658e7cfc64467c5d8b144d6e/css/sulis-fresh-site.webflow.19b495238.css"
+          rel="stylesheet" type="text/css"/>
 
-<style>
-body {
-    align-items: left;
-    justify-content: left;
-    padding: 10px;
-    padding-top: 0px;
-    font-family: sans-serif;
-    font-size: 120%;
-}
+    <style>
+        body {
+            justify-content: left;
+            padding: 10px;
+            padding-top: 0px;
+            font-family: sans-serif;
+            font-size: 120%;
+        }
+        .section {
+            padding-bottom: 5px;
+        }
 
-.nav-links {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 200%; /* This will make the font size 150% of the body font size, i.e., 24px */
-}
+        .section.content div {
+            border: 1px solid #f3f3f3;
+            border-radius:4px;
+            background-color: #f3f3f3;
+        }
+        .section.content h4.content-para {
+            padding: 20px;
+        }
 
-table {
-    border-collapse: collapse;
-    margin: 10px;
-    width: 100%;
-}
+        .nav-links {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 200%; /* This will make the font size 150% of the body font size, i.e., 24px */
+        }
 
-table, th, td {
-    border: none;
-}
+        table {
+            border-collapse: collapse;
+            margin: 10px;
+            width: 100%;
+        }
 
-/* .image-container { */
-div {
-    display: flex;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-    text-align: left;
-}
+        table, th, td {
+            border: none;
+        }
 
-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
+        /* .image-container { */
+        div {
+            display: flex;
+            /* justify-content: space-between; */
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 100%;
+            text-align: left;
+        }
 
-div img {
-    margin-right: 0;
-}
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
 
-p, ol { text-align: left; }
-/* .image-container img { 
-div img {
-    flex: 1;
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;
-    margin: 0 5px;
-}*/
+        div img {
+            margin-right: 0;
+        }
+
+        p, ol {
+            text-align: left;
+        }
+
+        /* .image-container img {
+        div img {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0 5px;
+        }*/
 
 
-video.portrait {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-}
+        video.portrait {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+        }
 
-video.landscape {
-    width: 100%;
-    max-width: 640px;
-    height: auto;
-}
+        video.landscape {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+        }
 
-img.portrait {
-    max-width: 320px;
-}
+        img.portrait {
+            max-width: 320px;
+        }
 
-img.landscape {
-    max-width: 640px;
-}
+        img.landscape {
+            max-width: 640px;
+        }
 
-img#number-blocks {
-    max-width: 640px;
-}
+        img#number-blocks {
+            max-width: 640px;
+        }
 
-img#assessment {
-    max-width: 480px;
-}
- 
+        img#assessment {
+            max-width: 480px;
+        }
 
-</style>
+
+    </style>
 </head>
 <body>
 
 
-<div class="navigation w-nav" style="position:fixed;width: 100%;"><div class="container navigation">
-	<a href="#" class="w-nav-brand"><div class="h4 margin-bottom-0px">Adaline in 2023</div></a><nav role="navigation" class="nav-menu w-nav-menu">
+<div class="navigation w-nav" style="position:fixed;width: 100%;">
+    <div class="container navigation">
+        <a href="#" class="w-nav-brand">
+            <div class="h4 margin-bottom-0px">Adaline in 2023</div>
+        </a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
 
-		<a href="#writing" class="nav-link last w-nav-link">Writing</a>
-        <a href="#music" class="nav-link w-nav-link">Music</a>
-		<a href="#drawing" class="nav-link last w-nav-link">Drawing</a>
-		<a href="#sports" class="nav-link w-nav-link">Sports</a>
-		<a href="#family" class="nav-link w-nav-link">Family</a>	
-		<a href="#others" class="nav-link last w-nav-link">Others</a>
+            <a href="#writing" class="nav-link last w-nav-link">Writing</a>
+            <a href="#music" class="nav-link w-nav-link">Music</a>
+            <a href="#drawing" class="nav-link last w-nav-link">Drawing</a>
+            <a href="#sports" class="nav-link w-nav-link">Sports</a>
+            <a href="#family" class="nav-link w-nav-link">Family</a>
+            <a href="#others" class="nav-link last w-nav-link">Others</a>
 
-	</nav><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div>
-
+        </nav>
+        <div class="menu-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+        </div>
+    </div>
+</div>
 
 <section class="section">
-
-<div class="container" id="sports">
-	<div class="w-layout-layout features-stack wf-layout-layout">
-
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/school-walkathon-310.mp4" type="video/mp4"> </video>
-					<p>Having a blast at school's annual walkathon.</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/tennis-306.mp4" type="video/mp4"> </video>
-					<p>Practicing tennis forehand</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/soccer-309.mp4" type="video/mp4"> </video>
-					<p>Soccer practice</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/swim-learn-freestyle-307.mp4" type="video/mp4"> </video>
-				<p>Learning to Swim progression - freestyle hands</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/swimming-learning-kick-306.mp4" type="video/mp4"> </video>
-					<p>Learning to Swim progression - how to kick effectively</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/swim-backstroke-kicking-309.mp4" type="video/mp4"> </video>
-			<p>Learning to Swim progression - Floating on my back</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/swim-freestyle2-310.mp4" type="video/mp4"> </video>
-					<p>Learning to Swim progression - Finally, we know how to free style</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/apapa2-305.mp4" type="video/mp4"> </video>
-					<p>Dancing at Academy of Palo Alto Performing Arts's annual performance</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/apapa-practice1-312.mp4" type="video/mp4"> </video>
-					<p>Learning new dance routine at Academy of Palo Alto Performing Arts</p>
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="container" id="#">
+        <div class="w-layout-layout features-stack wf-layout-layout">
+            <div class="w-layout-cell" style="flex-direction: row">
+                    <div style="display: inline-block; width: 33%;">
+                        <img src="./images/adaline-portrait.jpg" class="portrait">
+                        <p>Adaline</p>
+                    </div>
+                    <div style="display: inline-block; width: 33%;">
+                        <img src="./images/adaline-pinewood-performance2.JPG" class="portrait">
+                        <p>Singing performance during summer</p>
+                    </div>
+                    <div style="display: inline-block; width: 33%;">
+                        <img src="./images/adaline-nutcracker.jpg" class="portrait">
+                        <p>The Nutcracker during Christmas</p>
+                    </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="section">
-<div class="container" id="family">
-	<div class="w-layout-layout features-stack wf-layout-layout">
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img src="./images/adaline-and-sis-311.jpg" class="portrait">
-					<p>Adaline and baby sister Naomi</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<div>
-				<img src="./images/adaline-naomi-bunny2-310.jpg" class="portrait">
-				<img src="./images/anna-elisa2-310.jpg" class="portrait">
-				<img src="./images/anna-elisa-309.jpg" class="landscape">
-				</div>
-					<p>Adaline's drawing for her sister</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				
-		<div>
-			<img src="./images/drawing-instruction-book1.jpg" class="landscape">
-			<img src="./images/drawing-instruction-book2.jpg" class="landscape">
-			<img src="./images/drawing-instruction-book3.jpg" class="landscape">
-			<img src="./images/make-book-for-sis-307.jpg" class="landscape">
-			</div>
-					<p>I made drawing instruction booklet and other learning pamphlets for sister</p>
-			</div>
-		</div>
-	</div>
-</div>
+<section class="section content" id="sports">
+    <div class="container"><h4 class="content-para">Sports</h4></div>
+    <div class="container">
+        <div class="w-layout-layout features-stack wf-layout-layout">
+
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/school-walkathon-310.mp4" type="video/mp4">
+                    </video>
+                    <p>Having a blast at school's annual walkathon.</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/tennis-306.mp4" type="video/mp4">
+                    </video>
+                    <p>Practicing tennis forehand</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/soccer-309.mp4" type="video/mp4">
+                    </video>
+                    <p>Soccer practice</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/swim-learn-freestyle-307.mp4" type="video/mp4">
+                    </video>
+                    <p>Learning to Swim progression - freestyle hands</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/swimming-learning-kick-306.mp4" type="video/mp4">
+                    </video>
+                    <p>Learning to Swim progression - how to kick effectively</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/swim-backstroke-kicking-309.mp4" type="video/mp4">
+                    </video>
+                    <p>Learning to Swim progression - Floating on my back</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/swim-freestyle2-310.mp4" type="video/mp4">
+                    </video>
+                    <p>Learning to Swim progression - Finally, we know how to free style</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/apapa2-305.mp4" type="video/mp4">
+                    </video>
+                    <p>Dancing at Academy of Palo Alto Performing Arts's annual performance</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/apapa-practice1-312.mp4" type="video/mp4">
+                    </video>
+                    <p>Learning new dance routine at Academy of Palo Alto Performing Arts</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="section">
-<div class="container" id="music">
-	<div class="w-layout-layout features-stack wf-layout-layout">
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/sing-yankee-doodle-301.mp4" type="video/mp4"> </video>
-					<p>Excited to show the new song I learned at pre-K : yankee doodle</p>
-			</div>
-		</div>
-<!-- 		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/piano-part-of-the-world-311.mp4" type="video/mp4"> </video>
-					<p>Singing & playing piano: part-of-the-world</p>
-			</div>
-		</div>
--->
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/piano-beauty-and-the-beast-401.mp4" type="video/mp4"> </video>
-					<p>Singing & playing piano: Beauty and the Beast</p>
-			</div>
-		</div>
+<section class="section content" id="music">
+    <div class="container"><h4 class="content-para">Music</h4></div>
+    <div class="container">
+        <div class="w-layout-layout features-stack wf-layout-layout">
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img src="./images/adaline-pinewood-performance3.JPG" class="portrait">
+                    <p>Performing at a summer program</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/sing-yankee-doodle-301.mp4" type="video/mp4">
+                    </video>
+                    <p>Excited to show the new song I learned at pre-K : yankee doodle</p>
+                </div>
+            </div>
+            <!-- 		<div class="w-layout-cell">
+                        <div class="w-layout-vflex card">
+                            <video controls="" class="portrait"> <source src="./videos/piano-part-of-the-world-311.mp4" type="video/mp4"> </video>
+                                <p>Singing & playing piano: part-of-the-world</p>
+                        </div>
+                    </div>
+            -->
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/piano-beauty-and-the-beast-401.mp4" type="video/mp4">
+                    </video>
+                    <p>Singing & playing piano: Beauty and the Beast</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/choir-consider-yourself-303.mp4" type="video/mp4"> </video>
-					<p>First joining the choir at 4. My first song - Consider yourself: love singing this with my close friends</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/choir-Whenever-I-Feel-Afraid-305.mp4" type="video/mp4"> </video>
-					<p>Choir 2nd quarter. Whenever I Feel Afraid: it really works empowering me!</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/choir-Wouldnt-It-Be-Loverly-305.mp4" type="video/mp4"> </video>
-					<p>Wouldn't It Be Loverly: Just beautiful music and lyrics</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/choir-this-is-halloween-310.mp4" type="video/mp4"> </video>
-					<p>Performing at the 2023 cabaret and garden party to raise fund for city of palo alto children's center</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="landscape"> <source src="./videos/singing-solo-311.mp4" type="video/mp4"> </video>
-					<p>Singing solo (How Far I'll go) in front of a big audience during recital</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/choir-consider-yourself-303.mp4" type="video/mp4">
+                    </video>
+                    <p>First joining the choir at 4. My first song - Consider yourself: love singing this with my close
+                        friends</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/choir-Whenever-I-Feel-Afraid-305.mp4" type="video/mp4">
+                    </video>
+                    <p>Choir 2nd quarter. Whenever I Feel Afraid: it really works empowering me!</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/choir-Wouldnt-It-Be-Loverly-305.mp4" type="video/mp4">
+                    </video>
+                    <p>Wouldn't It Be Loverly: Just beautiful music and lyrics</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/choir-this-is-halloween-310.mp4" type="video/mp4">
+                    </video>
+                    <p>Performing at the 2023 cabaret and garden party to raise fund for city of palo alto children's
+                        center</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="landscape">
+                        <source src="./videos/singing-solo-311.mp4" type="video/mp4">
+                    </video>
+                    <p>Singing solo (How Far I'll go) in front of a big audience during recital</p>
+                </div>
+            </div>
 
-	</div>
-</div>
+        </div>
+    </div>
 </section>
 
-<section class="section">
-<div class="container" id="writing">
-	<div class="w-layout-layout features-stack wf-layout-layout">
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img id="number-blocks" src="./images/drawingsonpapertowel-310.jpg" class="portrait">
-					<p>I'm bored waiting at a restaurant. Here's how I remembered the number block characters (on a napkin)</p>
-			</div>
-		</div>
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img src="./images/why-the-sun-312.jpg" class="portrait">
-					<p>Drawing of the sun & planets.
-  <br>"Why do the planets never stop?
-  <br>Why doesn't the sun halt in the middle of the solar system?
-  <br>How can space have no gravity?
-  <br>How would a bunny jump on the moon?" 
-</p>
-			</div>
-		</div>
+<section class="section content" id="writing">
+    <div class="container"><h4 class="content-para">Writing</h4></div>
+    <div class="container">
+        <div class="w-layout-layout features-stack wf-layout-layout">
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img id="number-blocks" src="./images/drawingsonpapertowel-310.jpg" class="portrait">
+                    <p>I'm bored waiting at a restaurant. Here's how I remembered the number block characters (on a
+                        napkin)</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img src="./images/why-the-sun-312.jpg" class="portrait">
+                    <p>Drawing of the sun & planets.
+                        <br>"Why do the planets never stop?
+                        <br>Why doesn't the sun halt in the middle of the solar system?
+                        <br>How can space have no gravity?
+                        <br>How would a bunny jump on the moon?"
+                    </p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<div>
-					    <img src="./images/rules-311.jpg" class="landscape">
-					<img src="./images/schedule-311.jpg" class="landscape">
-					</div>
-				<p>Recall all the school teaching and set my own schedule
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <div>
+                        <img src="./images/rules-311.jpg" class="landscape">
+                        <img src="./images/schedule-311.jpg" class="landscape">
+                    </div>
+                    <p>Recall all the school teaching and set my own schedule
 
-		<br>Safe Rules: Nice, Safe, Kind, Love
-		<br>1. Don't push other people
-		<br>2. Do not be bullying
-		<br>3. Do not be unkind
-		<br>4. Do not be not safe
-		<br>5. You need to help people
-		<br>6. You need to be kind
-		<br>7. You need to be safe
-		<br>8. Show love to people
-		<br>9. Show kindness to others
-		<br>10. Be kind
-		<br>11. Be nice
-		<br>12. Do all I said to you!</p>
-			</div>
-		</div>
+                        <br>Safe Rules: Nice, Safe, Kind, Love
+                        <br>1. Don't push other people
+                        <br>2. Do not be bullying
+                        <br>3. Do not be unkind
+                        <br>4. Do not be not safe
+                        <br>5. You need to help people
+                        <br>6. You need to be kind
+                        <br>7. You need to be safe
+                        <br>8. Show love to people
+                        <br>9. Show kindness to others
+                        <br>10. Be kind
+                        <br>11. Be nice
+                        <br>12. Do all I said to you!</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img src="./images/letter-to-sis-311.jpg" class="portrait">
-					<p>Writing a letter to my sister, please listen to mommy and I promised I will walk you to school.
-</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img src="./images/letter-to-sis-311.jpg" class="portrait">
+                    <p>Writing a letter to my sister, please listen to mommy and I promised I will walk you to school.
+                    </p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img src="./images/letter-for-mom-310.jpg" class="landscape">
-					<p>A Letter to my mom, reminding her to help with things at school, and also I love her.
-</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img src="./images/letter-for-mom-310.jpg" class="landscape">
+                    <p>A Letter to my mom, reminding her to help with things at school, and also I love her.
+                    </p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img src="./images/letter-to-amelie-310.jpg" class="portrait">
-					<p>Letter to my friend at school</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img src="./images/letter-to-amelie-310.jpg" class="portrait">
+                    <p>Letter to my friend at school</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<div>
-<img src="./images/letter-to-music-teacher-311.jpg" class="portrait">
-<img src="./images/letter-to-music-teacher2-311.jpg" class="portrait">
-</div>
-					<p>Writing a thank you card to my music teacher</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <div>
+                        <img src="./images/letter-to-music-teacher-311.jpg" class="portrait">
+                        <img src="./images/letter-to-music-teacher2-311.jpg" class="portrait">
+                    </div>
+                    <p>Writing a thank you card to my music teacher</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/practice-chinese-writing-309.mp4" type="video/mp4"> </video>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/practice-chinese-writing-309.mp4" type="video/mp4">
+                    </video>
 
-					<p>Practice writing chinese with a brush pen</p>
-			</div>
-		</div>
+                    <p>Practice writing chinese with a brush pen</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/practice-chinese-reading-310.mp4" type="video/mp4"> </video>
-					<p>Practice Reading Chinese</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/practice-chinese-reading-310.mp4" type="video/mp4">
+                    </video>
+                    <p>Practice Reading Chinese</p>
+                </div>
+            </div>
 
 
-
-	</div>
-</div>
+        </div>
+    </div>
 </section>
 
+<section class="section content" id="drawing">
+    <div class="container"><h4 class="content-para">Drawing</h4></div>
+    <div class="container">
+        <div class="w-layout-layout features-stack wf-layout-layout">
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img src="./images/letter-with-stars-311.jpg" class="landscape">
+                    <p>Drawing inspired by experiencing solar eclipse</p>
+                </div>
+            </div>
 
-<section class="section">
-<div class="container" id="drawing">
-	<div class="w-layout-layout features-stack wf-layout-layout">
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img src="./images/letter-with-stars-311.jpg" class="landscape">
-					<p>Drawing inspired by experiencing solar eclipse</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <div>
+                        <img src="./images/drawing-in-action2-308.jpg" class="portrait">
+                        <img src="./images/cartoon-drawing-308.jpg" class="landscape">
+                    </div>
+                    <p>I love this cartoon drawing book</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<div>
-<img src="./images/drawing-in-action2-308.jpg" class="portrait">
-<img src="./images/cartoon-drawing-308.jpg" class="landscape">
-</div>
-					<p>I love this cartoon drawing book</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <div>
+                        <img src="./images/drawing-bag-311.jpg" class="portrait">
+                        <img src="./images/handbag-311.jpg" class="landscape">
+                    </div>
+                    <p>Trying to recreate the handbag ad that I saw earlier, with my own heart shaped clip design!</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<div>
-<img src="./images/drawing-bag-311.jpg" class="portrait">
-<img src="./images/handbag-311.jpg" class="landscape">
-</div>
-					<p>Trying to recreate the handbag ad that I saw earlier, with my own heart shaped clip design!</p>
-			</div>
-		</div>
-
-	</div>
-</div>
+        </div>
+    </div>
 </section>
 
+<section class="section content" id="family">
+    <div class="container"><h4 class="content-para">Family</h4></div>
+    <div class="container">
+        <div class="w-layout-layout features-stack wf-layout-layout">
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img src="./images/adaline-and-sis-311.jpg" class="portrait">
+                        <p>Adaline and baby sister Naomi</p>
+                </div>
 
-<section class="section">
-<div class="container" id="others">
-	<div class="w-layout-layout features-stack wf-layout-layout">
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<div>
-<img src="./images/museum3-311.jpg" class="portrait">
-<img src="./images/museum-311.jpg" class="portrait">
-<img src="./images/museum2-311.jpg" class="portrait">
-</div>
-					<p>SF MOMA museum visit!</p>
-			</div>
-		</div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <div>
+                        <img src="./images/adaline-naomi-bunny2-310.jpg" class="portrait">
+                        <img src="./images/anna-elisa2-310.jpg" class="portrait">
+                        <img src="./images/anna-elisa-309.jpg" class="landscape">
+                    </div>
+                    <p>Adaline's drawing for her sister</p>
+                </div>
+            </div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <div>
+                        <img src="./images/drawing-instruction-book1.jpg" class="landscape">
+                        <img src="./images/drawing-instruction-book2.jpg" class="landscape">
+                        <img src="./images/drawing-instruction-book3.jpg" class="landscape">
+                        <img src="./images/make-book-for-sis-307.jpg" class="landscape">
+                    </div>
+                    <p>I made drawing instruction booklet and other learning pamphlets for sister</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section content" id="others">
+    <div class="container"><h4 class="content-para">Others</h4></div>
+    <div class="container">
+        <div class="w-layout-layout features-stack wf-layout-layout">
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <div>
+                        <img src="./images/museum3-311.jpg" class="portrait">
+                        <img src="./images/museum-311.jpg" class="portrait">
+                        <img src="./images/museum2-311.jpg" class="portrait">
+                    </div>
+                    <p>SF MOMA museum visit!</p>
+                </div>
+            </div>
 
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img id="assessment" src="./images/drawing-following-instruction-307.jpg" class="portrait">
-					<p>Reading comprehension assessment given by advanced summer program. Read & Follow instructions
-</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img id="assessment" src="./images/drawing-following-instruction-307.jpg" class="portrait">
+                    <p>Reading comprehension assessment given by advanced summer program. Read & Follow instructions
+                    </p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<img src="./images/rush_hour_puzzle.jpg" class="landscape">
-					<p>Ssh! I'm solving my favorite puzzle - rush hour blockade</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <img src="./images/rush_hour_puzzle.jpg" class="landscape">
+                    <p>Ssh! I'm solving my favorite puzzle - rush hour blockade</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/school-motto-309.mp4" type="video/mp4"> </video>
-					<p>Reciting my new school's motto: Safe, Kind, Respectful too! In kindergarten we shrine through!</p>
-			</div>
-		</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/school-motto-309.mp4" type="video/mp4">
+                    </video>
+                    <p>Reciting my new school's motto: Safe, Kind, Respectful too! In kindergarten we shrine
+                        through!</p>
+                </div>
+            </div>
 
-		<div class="w-layout-cell">
-			<div class="w-layout-vflex card">
-				<video controls="" class="portrait"> <source src="./videos/buying-using-own-money-311.mp4" type="video/mp4"> </video>
-					<p>I earned our 1st dollar, now I got to spend it!</p>
-			</div>
-		</div>
-	</div>
-</div>
+            <div class="w-layout-cell">
+                <div class="w-layout-vflex card">
+                    <video controls="" class="portrait">
+                        <source src="./videos/buying-using-own-money-311.mp4" type="video/mp4">
+                    </video>
+                    <p>I earned our 1st dollar, now I got to spend it!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <script>
-    window.onload = function() {
-    var images = document.getElementsByTagName('img');
+    window.onload = function () {
+        var images = document.getElementsByTagName('img');
 
-    for (var i = 0; i < images.length; i++) {
-        if (images[i].naturalHeight > images[i].naturalWidth) {
-            images[i].className = 'portrait';
-        } else {
-            images[i].className = 'landscape';
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].naturalHeight > images[i].naturalWidth) {
+                images[i].className = 'portrait';
+            } else {
+                images[i].className = 'landscape';
+            }
         }
-    }
 
-    var videos = document.getElementsByTagName('video');
+        var videos = document.getElementsByTagName('video');
 
-    for (var i = 0; i < videos.length; i++) {
-        if (videos[i].videoHeight > videos[i].videoWidth) {
-            videos[i].className = 'portrait';
-        } else {
-            videos[i].className = 'landscape';
+        for (var i = 0; i < videos.length; i++) {
+            if (videos[i].videoHeight > videos[i].videoWidth) {
+                videos[i].className = 'portrait';
+            } else {
+                videos[i].className = 'landscape';
+            }
         }
-    };        
-};
+        ;
+    };
+</script>
 </body>
 </html>
 
